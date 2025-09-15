@@ -9,6 +9,10 @@ on:
   pull_request:
     branches: [ "main" ]
 
+defaults:
+  run:
+    working-directory: ./src/csharp-intro-ptbr
+
 jobs:
   build:
 
@@ -20,8 +24,6 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 9.0.x
-    - name: Set working directory
-      run: cd ./src/csharp-intro-ptbr
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
