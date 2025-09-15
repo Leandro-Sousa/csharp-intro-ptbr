@@ -11,7 +11,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./src/charp-intro-ptbr
+    working-directory: ./src/csharp-intro-ptbr
 
 jobs:
   build:
